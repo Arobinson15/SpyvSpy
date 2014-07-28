@@ -9,6 +9,7 @@
 //open the file in alternate browser for easier access when  while working at a webpage .
 //------------------------------------------------+++++++
 /* This is a program to multiply matrices 
+max up to [4x4] dimensions anything more wont work .
 defined 
 not defined
 note that matrices are not commutative 
