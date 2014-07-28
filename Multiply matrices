@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+//-----------------------------------------+++++
+// This is an html file so click and run in your browser (chrome recommended) 
+//open the file in alternate browser for easier access when  while working at a webpage .
+//------------------------------------------------+++++++
+/* This is a program to multiply matrices 
+defined 
+not defined
+note that matrices are not commutative 
+so try the program at this website :  https://www.khanacademy.org/math/precalculus/precalc-matrices/matrix_multiplication/e/multiplying_a_matrix_by_a_matrix
+*/
+
+//------------------------------------------+++++
+var summator =
+{
+   matx : function(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, aa, ba, ca, da, ea, fa, rowA, columnA, rowB, columnB, rowC, columnC)
+   {
+      var rowA = parseInt(prompt("how many rows?", Number()));
+      if(rowA == 1)
+      {
+         document.write("Matrix A:");
+      }
+      else if(rowA == 2)
+      {
+         document.write("Matrix A:");
+      }
+      else if(rowA == 3)
+      {
+         document.write("Matrix A:");
+      }
+      else if(rowA == 4)
+      {
+         document.write("Matrix A:");
+      }
+      else if(rowA == 5)
+      {
+         document.write("Matrix A:");
+      }
+      var columnA = parseInt(prompt("how many columns?", Number()));
+      if(columnA == 1)
+      {
+         document.write( + rowA + 'rows and'
+         + columnA + 'columns\n');
+      }
+      else if(columnA == 2)
+      {
+         document.write( + rowA + 'rows and'
+         + columnA + 'columns\n');
+      }
+      else if(columnA == 3)
+      {
+         document.write( + rowA + 'rows and'
+         + columnA + 'columns\n');
+      }
+      else if(columnA == 4)
+      {
+         document.write( + rowA + 'rows and'
+         + columnA + 'columns\n');
+      }
+      else if(columnA == 5)
+      {
+         document.write( + rowA + 'rows and'
+         + columnA + 'columns\n');
+      }
+
+      var rowB = parseInt(prompt("how many rows?", Number()));
+      if(rowB == 1)
+      {
+         document.write("matrix B: ");
+      }
+      else if(rowB == 2)
+      {
+         document.write("matrix B: ");
+      }
+      else if(rowB == 3)
+      {
+         document.write("matrix B: ");
+      }
+      else if(rowB == 4)
+      {
+         document.write("matrix B: ");
+      }
+      else if(rowB == 5)
+      {
+         document.write("matrix B: ");
+      }
+      var columnB = parseInt(prompt("how many columns?", Number()));
+      if(columnB == 1)
+      {
+         document.write( + rowB + 'rows and'
+         + columnB + 'columns');
+      }
+      else if(columnB == 2)
+      {
+         document.write( + rowB + 'rows and'
+         + columnB + 'columns');
+      }
+      else if(columnB == 3)
+      {
+         document.write( + rowB + 'rows and'
+         + columnB + 'columns');
+      }
+      else if(columnB == 4)
+      {
+         document.write( + rowB + 'rows and'
+         + columnB + 'columns');
+      }
+      else if(columnB == 5)
+      {
+         document.write( + rowB + 'rows and'
+         + columnB + 'columns');
+      }
+      else
+      {
+         alert("default") ;
+      }
+
+      // how many rows and columns in each matrix A, B, C etc.
+      if(columnA == rowB)
+      {
+         document.write("The matrices are defined for multiplication\n");
+      }
+      else if(columnA != rowB)
+      {
+         document.write("The matrices are not defined for multiplication\n");
+      }
+      else
+      {
+         alert("default");
+      }
+
+      // matrix multiplication 1x1 & 1x1
+      if(rowA == 1 && columnA == 1 && rowB == 1 && columnB == 1 )
+      {
+         var a = parseInt(prompt());
+         // [a] * [b]
+         var b = parseInt(prompt());
+         document.write("product of matrices= \n");
+         console.log(document.write( + a * b + ','));
+      }
+
+      // matrix multiplication 1x2 & 2x1
+      if(rowA == 1 && columnA == 2 && rowB == 2 && columnB == 1 )
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         document.write("product of matrices= \n");
+         console.log(document.write( + a * a + b * b + ','));
+      }
+
+      // matrix multiplication 1x1 & 1x2
+      if(rowA == 1 && columnA == 1 && rowB == 1 && columnB == 2 )
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         document.write("product of matrices= \n");
+         console.log(document.write( + a * b + a * c + ','));
+      }
+
+      // matrix multiplication 2x1 & 1x1
+      if(rowA == 2 && columnA == 1 && rowB == 1 && columnB == 1 )
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         document.write("product of matrices= \n");
+         console.log(document.write( + a * c + ','));
+         console.log(document.write( + b * c + ','));
+      }
+
+      // matrix multiplication 4x1 & 1x1
+      if(rowA == 3 && columnA == 1 && rowB == 1 && columnB == 1 )
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var  e = parseInt(prompt());
+
+         document.write("product of matrices= \n");
+         console.log(document.write( + a * e + ','));
+         console.log(document.write( + b * e + ','));
+         console.log(document.write( + c * e + ','));
+         console.log(document.write( + d * e + ','));
+      }
+
+      // multiply 1x1 & 1x3
+      else if(rowA == 1 && columnA == 1 && rowB == 1 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         //
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * b + ','));
+         console.log(document.write( + a * c + ','))
+         ;
+         console.log(document.write( + a * d + ','));
+      }
+
+      // multiply 1x1 & 1x4
+      else if(rowA == 1 && columnA == 1 && rowB == 1 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var  e = parseInt(prompt());
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * b + ','));
+         console.log(document.write( + a * c + ','))
+         ;
+         console.log(document.write( + a * d + ','));
+         console.log(document.write( + a * e + ','));
+      }
+
+      // multiply 2x1 & 1x4
+      else if(rowA == 2 && columnA == 1 && rowB == 1 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         //
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * c + ','));
+         console.log(document.write( + a * d + ','));
+         console.log(document.write( + a * e + ','));
+         console.log(document.write( + a * f + ','));
+         console.log(document.write( + b * c + ','));
+         console.log(document.write( + b * d + ','));
+         console.log(document.write( + b * e + ','));
+         console.log(document.write( + b * f + ','));
+
+      }
+
+      // multiply 4x1 & 1x2
+      else if(rowA == 4 && columnA == 1 && rowB == 1 && columnB == 2)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         //
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * e + ','));
+         console.log(document.write( + a * f + ','));
+         console.log(document.write( + b * e + ','));
+         console.log(document.write( + b * f + ','));
+         console.log(document.write( + c * e + ','));
+         console.log(document.write( + c * f + ','));
+         console.log(document.write( + d * e + ','));
+         console.log(document.write( + d * f + ','));
+
+      }
+
+
+      // multiply 3x1 & 1x4
+      else if(rowA == 3 && columnA == 1 && rowB == 1 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         //
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * d + ','));
+         console.log(document.write( + a * e + ','));
+         console.log(document.write( + a * f + ','));
+         console.log(document.write( + a * g + ','));
+         console.log(document.write( + b * d + ','));
+         console.log(document.write( + b * e + ','));
+         console.log(document.write( + b * f + ','));
+         console.log(document.write( + b * g + ','));
+         console.log(document.write( + c * d + ','));
+         console.log(document.write( + c * e + ','));
+         console.log(document.write( + c * f + ','));
+         console.log(document.write( + c * g + ','));
+
+      }
+
+      // multiply 4x1 & 1x3
+      else if(rowA == 4 && columnA == 1 && rowB == 1 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         //
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * e + ','));
+         console.log(document.write( + a * f + ','));
+         console.log(document.write( + a * g + ','));
+         console.log(document.write( + b * e + ','));
+         console.log(document.write( + b * f + ','));
+         console.log(document.write( + b * g + ','));
+         console.log(document.write( + c * e + ','));
+         console.log(document.write( + c * f + ','));
+         console.log(document.write( + c * g + ','));
+         console.log(document.write( + d * e + ','));
+         console.log(document.write( + d * f + ','));
+         console.log(document.write( + d * g + ','));
+
+      }
+
+      // multiply 2x1 & 1x2
+      else if(rowA == 2 && columnA == 1 && rowB == 1 && columnB == 2)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         //
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * c + ','));
+         console.log(document.write( + b * d + ','))
+         ;
+         console.log(document.write( + b * c + ','));
+         console.log(document.write( + b * d + ','));
+      }
+
+      // multiply 2x1 & 1x3
+      else if(rowA == 2 && columnA == 1 && rowB == 1 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var  e = parseInt(prompt());
+         //
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * c + ','));
+         console.log(document.write( + a * d + ','))
+         ;
+         console.log(document.write( + a * e + ','));
+         console.log(document.write( + b * c + ','));
+         console.log(document.write( + b * d + ','));
+         console.log(document.write( + b * e + ','));
+      }
+
+      // multiply 2x2 & 2x1
+      else if(rowA == 2 && columnA == 2 && rowB == 2 && columnB == 1)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         //
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * e + b * f + ','));
+         console.log(document.write( + c * e + d * f + ','));
+
+      }
+
+      // multiply 2x2 & 2x2
+      else if(rowA == 2 && columnA == 2 && rowB == 2 && columnB == 2)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         //
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * e + b * g + ','));
+         console.log(document.write( + a * f + b * h + ','))
+         ;
+         console.log(document.write( + c * e + d * g + ','));
+         console.log(document.write( + c * f + d * h + ','));
+
+      }
+
+      // multiply 2x2 & 2x3
+      else if(rowA == 2 && columnA == 2 && rowB == 2 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         //
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * e + b * h + ','));
+         console.log(document.write( + a * f + b * i + ','));
+         console.log(document.write( + a * g + b * j + ','));
+         ;
+         console.log(document.write( + c * e + d * h + ','));
+         console.log(document.write( + c * f + d * i + ','));
+         console.log(document.write( + c * g + d * j + ','));
+      }
+
+      // multiply 2x2 & 2x4
+      else if(rowA == 2 && columnA == 2 && rowB == 2 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         //
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * e + b * i + ','));
+         console.log(document.write( + a * f + b * j + ','));
+         console.log(document.write( + a * g + b * k + ','));
+         console.log(document.write( + a * h + b * l + ','));
+         ;
+         console.log(document.write( + c * e + d * i + ','));
+         console.log(document.write( + c * f + d * j + ','));
+         console.log(document.write( + c * g + d * k + ','));
+         console.log(document.write( + c * h + d * l + ','));
+      }
+
+      // multiply 1x4 & 4x2
+      else if(rowA == 1 && columnA == 4 && rowB == 4 && columnB == 2)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         //
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * e + b * g + c * i + d * k + ','));
+         console.log(document.write( + a * f + b * h + c * j + d * l + ','));
+      }
+
+      // multiply 1x4 & 4x3
+      else if(rowA == 1 && columnA == 4 && rowB == 4 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         //
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * e + b * h + c * k + d * n + ','));
+         console.log(document.write( + a * f + b * i + c * l + d * o + ','))
+         ;
+         console.log(document.write( + a * g + b * j + c * m + d * p + ','));
+      }
+
+      // multiply 3x3 & 3x1
+      else if(rowA == 3 && columnA == 3 && rowB == 3 && columnB == 1)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         //
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * j + b * k + c * l + ','));
+         console.log(document.write( + d * j + e * k + f * l + ','))
+         ;
+         console.log(document.write( + g * j + h * k + i * l + ','));
+      }
+
+      // multiply 1x4 & 4x4
+      else if(rowA == 1 && columnA == 4 && rowB == 4 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         //
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * e + b * i + c * m + d * q + ','));
+         console.log(document.write( + a * f + b * j + c * n + d * r + ','))
+         ;
+         console.log(document.write( + a * g + b * k + c * o + d * s + ','));
+         console.log(document.write( + a * h + b * l + c * p + d * t + ','));
+      }
+
+      // multiply 2x4 & 4x4
+      else if(rowA == 2 && columnA == 4 && rowB == 4 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         //
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+         var u = parseInt(prompt());
+         var v = parseInt(prompt());
+         var w = parseInt(prompt());
+         var x = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * i + b * m + c * q + d * u + ','));
+         console.log(document.write( + a * j + b * n + c * r + d * v + ','))
+         ;
+         console.log(document.write( + a * k + b * o + c * s + d * w + ','));
+         console.log(document.write( + a * l + b * p + c * t + d * x + ','));
+         console.log(document.write( + e * i + f * m + g * q + h * u + ','));
+         console.log(document.write( + e * j + f * n + g * r + h * v + ','));
+         console.log(document.write( + e * k + f * o + g * s + h * w + ','));
+         console.log(document.write( + e * l + f * p + g * t + h * x + ','));
+      }
+
+      // multiply 4x4 & 4x1
+      else if(rowA == 4 && columnA == 4 && rowB == 4 && columnB == 1)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         //
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * q + b * r + c * s + d * t + ','));
+         console.log(document.write( + e * q + f * r + g * s + h * t + ','))
+         ;
+         console.log(document.write( + i * q + j * r + k * s + l * t + ','));
+         console.log(document.write( + m * q + n * r + o * s + p * t + ','));
+
+      }
+
+
+      // multiply 4x4 & 4x2
+      else if(rowA == 4 && columnA == 4 && rowB == 4 && columnB == 2)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         //
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+         var u = parseInt(prompt());
+         var v = parseInt(prompt());
+         var w = parseInt(prompt());
+         var x = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * q + b * s + c * u + d * w + ','));
+         console.log(document.write( + a * r + b * t + c * v + d * x + ','))
+         ;
+         console.log(document.write( + e * q + f * s + g * u + h * w + ','));
+         console.log(document.write( + e * r + f * t + g * v + h * x + ','));
+         console.log(document.write( + i * q + j * s + k * u + l * w + ','));
+         console.log(document.write( + i * r + j * t + k * v + l * x + ','));
+         console.log(document.write( + m * q + n * s + o * u + p * w + ','));
+         console.log(document.write( + m * r + n * t + o * v + p * x + ','));
+      }
+
+
+      // multiply 3x2 & 2x3
+      else if(rowA == 3 && columnA == 2 && rowB == 2 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         //
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * g + b * i + c * k + ','));
+         console.log(document.write( + a * h + b * j + c * l + ','))
+         ;
+         console.log(document.write( + d * g + e * i + f * k + ','));
+         console.log(document.write( + d * h + e * j + f * l + ','));
+      }
+      // multiply 3x2 & 2x2
+      else if(rowA == 3 && columnA == 2 && rowB == 2 && columnB == 2)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         //
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * g + b * i + ','));
+         console.log(document.write( + a * h + b * j + ','))
+         ;
+         console.log(document.write( + c * g + d * i + ','));
+         console.log(document.write( + c * h + d * j + ','));
+         console.log(document.write( + e * g + f * i + ','));
+         console.log(document.write( + e * h + f * j + ','));
+      }
+
+      // multiply 2x4 & 4x3
+      else if(rowA == 2 && columnA == 4 && rowB == 4 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         //
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * i + b * l + c * o + d * r + ','));
+         console.log(document.write( + a * j + b * m + c * p + d * s + ','))
+         ;
+         console.log(document.write( + a * k + b * n + c * q + d * t + ','));
+         console.log(document.write( + e * i + f * l + g * o + h * r + ','));
+         console.log(document.write( + e * j + f * m + g * p + h * s + ','));
+         console.log(document.write( + e * k + f * n + g * q + h * t + ','));
+      }
+
+
+      // multiply 2x3 & 3x2
+      else if(rowA == 2 && columnA == 3 && rowB == 3 && columnB == 2)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         //
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * g + b * i + c * k + ','));
+         console.log(document.write( + a * h + b * j + c * l + ','))
+         ;
+         console.log(document.write( + d * g + e * i + f * k + ','));
+         console.log(document.write( + d * h + e * j + f * l + ','));
+      }
+
+      // multiply 1x3 & 3x2
+      else if(rowA == 1 && columnA == 3 && rowB == 3 && columnB == 2)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         //
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * d + b * f + c * h + ','));
+         console.log(document.write( + a * e + b * g + c * i + ','));
+      }
+      // ---- * *
+
+      // multiply 2x3 & 3x1
+      else if(rowA == 2 && columnA == 3 && rowB == 3 && columnB == 1)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         //
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * g + b * h + c * i + ','));
+         console.log(document.write( + d * g + e * h + f * i + ','));
+      }
+      // ---- * *
+
+
+      // multiply 2x4 & 4x1
+      else if(rowA == 2 && columnA == 4 && rowB == 4 && columnB == 1)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         //
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * i + b * j + c * k + d * l + ','));
+         console.log(document.write( + e * i + f * j + g * k + h * l + ','));
+      }
+      // ---- * *
+
+      // multiply 1x3 & 3x3
+      else if(rowA == 1 && columnA == 3 && rowB == 3 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         //
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * d + b * g + c * j + ','));
+         console.log(document.write( + a * e + b * h + c * k + ','));
+         console.log(document.write( + a * f + b * i + c * l + ','));
+      }
+      // ---- * *
+
+      // multiply 1x3 & 3x1
+      else if(rowA == 1 && columnA == 3 && rowB == 3 && columnB == 1)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         //
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * d + b * e + c * f + ','));
+      }
+      // ---- * *
+      // multiply 3x1 & 1x3
+      else if(rowA == 3 && columnA == 1 && rowB == 1 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         //
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * d + b * e + c * f + ','));
+      }
+      // ---- * *
+
+      // multiply 3x1 & 1x2
+      else if(rowA == 3 && columnA == 1 && rowB == 1 && columnB == 2)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         //
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * d + ','));
+         console.log(document.write( + a * e + ','));
+         console.log(document.write( + b * d + ','));
+         console.log(document.write( + b * e + ','));
+         console.log(document.write( + c * d + ','));
+         console.log(document.write( + c * e + ','));
+      }
+      // ---- * *
+
+      // multiply 2x3 3x3
+      else if(rowA == 2 && columnA == 3 && rowB == 3 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         //
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * g + b * j + c * m + ','));
+         console.log(document.write( + a * h + b * k + c * n + ','))
+         ;
+         console.log(document.write( + a * i + b * l + c * o + ','));
+         console.log(document.write( + d * g + e * j + f * m + ','));
+         console.log(document.write( + d * h + e * k + f * n + ','));
+         console.log(document.write( + d * i + e * l + f * o + ','))
+         ;
+      }
+      // --- * *
+
+      // multiply 2x3 3x4
+      else if(rowA == 2 && columnA == 3 && rowB == 3 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         //
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * g + b * h + c * i + ','));
+         console.log(document.write( + a * j + b * k + c * l + ','))
+         ;
+         console.log(document.write( + a * m + b * n + c * o + ','));
+         console.log(document.write( + a * p + b * q + c * r + ','));
+         console.log(document.write( + d * g + e * h + f * i + ','));
+         console.log(document.write( + d * j + e * k + f * l + ','));
+         console.log(document.write( + d * m + e * n + f * o + ','));
+         console.log(document.write( + d * p + e * q + f * r + ','));
+      }
+      // --- * *
+
+      // multiply 3x3 3x2
+      else if(rowA == 3 && columnA == 3 && rowB == 3 && columnB == 2)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         //
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * j + d * k + g * l + ','));
+         console.log(document.write( + a * m + d * n + g * o + ','))
+         ;
+         console.log(document.write( + a * p + d * q + g * r + ','));
+         console.log(document.write( + b * j + e * k + h * l + ','));
+         console.log(document.write( + b * m + e * n + h * o + ','));
+         console.log(document.write( + b * p + e * q + h * r + ','))
+         ;
+         console.log(document.write( + c * j + f * k + i * l + ','));
+         console.log(document.write( + c * m + f * n + i * o + ','))
+         ;
+         console.log(document.write( + c * p + f * q + i * r + ','));
+      }
+      // --- * *
+
+
+
+      // multiply 3x3 & 3x3
+      else if(rowA == 3 && columnA == 3 && rowB == 3 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         //
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * j + b * m + c * p + ','));
+         console.log(document.write( + a * k + b * n + c * q + ','))
+         ;
+         console.log(document.write( + a * l + b * o + c * r + ','));
+         console.log(document.write( + d * j + e * m + g * p + ','));
+         console.log(document.write( + d * k + e * n + f * o + ','));
+         console.log(document.write( + d * l + e * o + f * r + ','))
+         ;
+         console.log(document.write( + g * j + h * m + i * p + ','));
+         console.log(document.write( + g * k + h * n + i * q + ','))
+         ;
+         console.log(document.write( + g * l + h * o + i * r + ','));
+      }
+      // --- * *
+
+      // multiply 4x1 & 1x4
+      else if(rowA == 4 && columnA == 1 && rowB == 1 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * e + ','));
+         console.log(document.write( + a * f + ','));
+         console.log(document.write( + a * g + ','));
+         console.log(document.write( + a * h + ','));
+         console.log(document.write( + b * e + ','));
+         console.log(document.write( + b * f + ','));
+         console.log(document.write( + b * g + ','));
+         console.log(document.write( + b * h + ','));
+         console.log(document.write( + c * e + ','));
+         console.log(document.write( + c * f + ','));
+         console.log(document.write( + c * g + ','));
+         console.log(document.write( + c * h + ','));
+         console.log(document.write( + d * e + ','));
+         console.log(document.write( + d * f + ','));
+         console.log(document.write( + d * g + ','));
+         console.log(document.write( + d * h + ','));
+      }
+      // ---- * *
+
+      // multiply 1x4 & 4x1
+      else if(rowA == 1 && columnA == 4 && rowB == 4 && columnB == 1)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * e + b * f + c * g + d * h + ','));
+      }
+
+      // multiply 4x2 & 2x4
+      else if(rowA == 4 && columnA == 2 && rowB == 2 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         //
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+         var u = parseInt(prompt());
+         var v = parseInt(prompt());
+         var w = parseInt(prompt());
+         var x = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * i + c * j + e * k + g * l + ','));
+         console.log(document.write( + a * m + c * n + e * o + p * g + ','))
+         ;
+         console.log(document.write( + a * q + r * c + e * s + g * t + ','));
+         console.log(document.write( + a * u + c * v + e * w + g * x + ','));
+         //
+         console.log(document.write( + b * i + d * j + f * k + h * l + ','));
+         console.log(document.write( + b * m + d * n + f * o + h * p + ','))
+         ;
+         console.log(document.write( + b * q + d * r + f * s + h * t + ','));
+         console.log(document.write( + b * u + d * v + f * w + h * x + ','));
+      }
+
+      // multiply 2x4 & 4x2
+      else if(rowA == 2 && columnA == 4 && rowB == 4 && columnB == 2)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         //
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+         var u = parseInt(prompt());
+         var v = parseInt(prompt());
+         var w = parseInt(prompt());
+         var x = parseInt(prompt());
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * i + b * m + ','));
+         console.log(document.write( + a * j + b * n + ','));
+         console.log(document.write( + a * k + b * o + ','));
+         console.log(document.write( + a * l + b * p + ','));
+         //
+         console.log(document.write( + c * i + d * m + ','));
+         console.log(document.write( + c * j + d * n + ','));
+         console.log(document.write( + c * k + d * o + ','));
+         console.log(document.write( + c * l + d * p + ','));
+         console.log(document.write( + e * i + f * m + ','));
+         console.log(document.write( + e * j + f * n + ','));
+         console.log(document.write( + e * k + f * o + ','));
+         console.log(document.write( + e * l + f * p + ','));
+         console.log(document.write( + g * i + h * m + ','));
+         console.log(document.write( + g * j + h * n + ','));
+         console.log(document.write( + g * k + h * o + ','));
+         console.log(document.write( + g * l + h * p + ','));
+      }
+
+      // multiply 3x4 & 4x3
+      else if(rowA == 3 && columnA == 4 && rowB == 4 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         //
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+         var u = parseInt(prompt());
+         var v = parseInt(prompt());
+         var w = parseInt(prompt());
+         var x = parseInt(prompt());
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * m + b * p + c * s + d * v + ','));
+         console.log(document.write( + a * n + b * q + c * t + d * w + ','));
+         console.log(document.write( + a * o + b * r + c * u + d * x + ','))
+         ;
+         console.log(document.write( + e * m + f * p + g * s + h * v + ','));
+         console.log(document.write( + e * n + f * q + g * t + h * w + ','));
+         console.log(document.write( + e * o + f * r + g * u + h * x + ','))
+         ;
+         console.log(document.write( + i * m + j * p + k * s + l * v + ','));
+         console.log(document.write( + i * n + j * q + k * t + l * w + ','));
+         console.log(document.write( + i * o + j * r + k * u + l * x + ','));
+
+      }
+
+      // multiply 3x3 & 3x4
+      else if(rowA == 3 && columnA == 3 && rowB == 3 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         //
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+         var u = parseInt(prompt());
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * j + b * n + c * r + + ','));
+         console.log(document.write( + a * k + b * o + c * s + ','));
+         console.log(document.write( + a * l + b * p + c * t + ','));
+         console.log(document.write( + a * m + b * q + c * u + ','))
+         ;
+         console.log(document.write( + d * j + e * n + f * r + ','));
+         console.log(document.write( + d * k + e * o + f * s + ','));
+         console.log(document.write( + d * l + e * p + f * t + ','));
+         console.log(document.write( + d * m + e * q + f * u + ','))
+         ;
+         console.log(document.write( + g * j + h * n + i * r + ','));
+         console.log(document.write( + g * k + h * o + i * s + ','));
+         console.log(document.write( + g * l + h * p + i * t + ','));
+         console.log(document.write( + g * m + h * q + i * u + ','));
+
+
+      }
+
+      // multiply 4x3 & 3x4
+      else if(rowA == 4 && columnA == 3 && rowB == 3 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         //
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+         var u = parseInt(prompt());
+         var v = parseInt(prompt());
+         var w = parseInt(prompt());
+         var x = parseInt(prompt());
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * m + b * q + c * u + + ','));
+         console.log(document.write( + a * n + b * r + c * v + ','));
+         console.log(document.write( + a * o + b * s + c * w + ','))
+         ;
+         console.log(document.write( + a * p + b * t + c * x + ','));
+         console.log(document.write( + d * m + e * q + f * u + ','));
+         console.log(document.write( + d * n + e * r + f * v + ','))
+         ;
+         console.log(document.write( + d * o + e * s + f * w + ','));
+         console.log(document.write( + d * p + e * t + f * x + ','));
+         console.log(document.write( + g * m + h * q + i * u + ','))
+         ;
+         console.log(document.write( + g * n + h * r + i * v + ','));
+         console.log(document.write( + g * o + h * s + i * w + ','));
+         console.log(document.write( + g * p + h * t + i * x + ','))
+         ;
+         console.log(document.write( + j * m + k * p + l * u + ','));
+         console.log(document.write( + j * n + k * r + l * v + ','));
+         console.log(document.write( + j * o + k * s + l * w + ','))
+         ;
+         console.log(document.write( + j * p + k * t + l * x + ','));
+
+      }
+
+      // multiply 4x4 & 4x3
+      else if(rowA == 4 && columnA == 4 && rowB == 4 && columnB == 3)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         //
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+         var u = parseInt(prompt());
+         var v = parseInt(prompt());
+         var w = parseInt(prompt());
+         var x = parseInt(prompt());
+         var y = parseInt(prompt());
+         var z = parseInt(prompt());
+         var aa = parseInt(prompt());
+         var ba = parseInt(prompt());
+
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * q + b * t + c * w + d * z + ','));
+         console.log(document.write( + a * r + b * u + c * x + d * aa + ','));
+         console.log(document.write( + a * s + b * v + c * y + d * ba + ','));
+         ;
+         console.log(document.write( + e * q + f * t + g * w + h * z + ','));
+         console.log(document.write( + e * r + f * u + g * x + h * aa + ','));
+         console.log(document.write( + e * s + f * v + g * y + h * ba + ','));
+         ;
+         console.log(document.write( + i * q + j * t + k * w + l * z + ','));
+         console.log(document.write( + i * r + j * u + k * x + l * aa + ','));
+         console.log(document.write( + i * s + j * v + k * y + l * ba + ','));
+         ;
+         console.log(document.write( + m * q + n * t + o * w + p * z + ','));
+         console.log(document.write( + m * r + n * u + o * x + p * aa + ','));
+         console.log(document.write( + m * s + n * v + o * y + p * ba + ','));
+
+      }
+
+
+      // multiply 3x4 & 4x4
+      else if(rowA == 3 && columnA == 4 && rowB == 4 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         //
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+         var u = parseInt(prompt());
+         var v = parseInt(prompt());
+         var w = parseInt(prompt());
+         var x = parseInt(prompt());
+         var y = parseInt(prompt());
+         var z = parseInt(prompt());
+         var aa = parseInt(prompt());
+         var ba = parseInt(prompt());
+
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * m + b * q + c * u + d * y + ','));
+         console.log(document.write( + a * n + b * r + c * v + d * z + ','));
+         console.log(document.write( + a * o + b * s + c * w + d * aa + ','));
+         console.log(document.write( + a * p + b * t + c * x + d * ba + ','));
+         ;
+         console.log(document.write( + e * m + f * q + g * u + h * y + ','));
+         console.log(document.write( + e * n + f * r + g * v + h * z + ','));
+         console.log(document.write( + e * o + f * s + g * w + h * aa + ','));
+         console.log(document.write( + e * p + f * t + g * x + h * ba + ','));
+         ;
+         console.log(document.write( + i * m + j * q + k * u + l * y + ','));
+         console.log(document.write( + i * n + j * r + k * v + l * z + ','));
+         console.log(document.write( + i * o + j * s + k * w + l * aa + ','));
+         console.log(document.write( + i * p + j * t + k * x + l * ba + ','));
+
+
+      }
+
+      // multiply 4x4 & 4x4
+      else if(rowA == 4 && columnA == 4 && rowB == 4 && columnB == 4)
+      {
+         var a = parseInt(prompt());
+         var b = parseInt(prompt());
+         var c = parseInt(prompt());
+         var  d = parseInt(prompt());
+         var e = parseInt(prompt());
+         var f = parseInt(prompt());
+         var g = parseInt(prompt());
+         var h = parseInt(prompt());
+         var i = parseInt(prompt());
+         var j = parseInt(prompt());
+         var k = parseInt(prompt());
+         var l = parseInt(prompt());
+         //
+         var m = parseInt(prompt());
+         var n = parseInt(prompt());
+         var o = parseInt(prompt());
+         var p = parseInt(prompt());
+         var q = parseInt(prompt());
+         var r = parseInt(prompt());
+         var s = parseInt(prompt());
+         var t = parseInt(prompt());
+         var u = parseInt(prompt());
+         var v = parseInt(prompt());
+         var w = parseInt(prompt());
+         var x = parseInt(prompt());
+         var y = parseInt(prompt());
+         var z = parseInt(prompt());
+         var aa = parseInt(prompt());
+         var ba = parseInt(prompt());
+         var ca = parseInt(prompt());
+         var da = parseInt(prompt());
+         var ea = parseInt(prompt());
+         var fa = parseInt(prompt());
+
+
+         document.write("product of matrices= ");
+         console.log(document.write( + a * q + e * r + i * s + m * t + ','));
+         console.log(document.write( + a * u + e * v + i * w + m * x + ','));
+         console.log(document.write( + a * y + e * z + i * aa + m * ba + ','));
+         console.log(document.write( + a * ca + e * da + i * ea + m * fa + ','))
+         ;
+         console.log(document.write( + b * q + f * r + j * s + n * t + ','));
+         console.log(document.write( + b * u + f * v + j * w + n * x + ','));
+         console.log(document.write( + b * y + f * z + j * aa + n * ba + ','));
+         console.log(document.write( + b * ca + f * da + j * ea + n * fa + ','))
+         ;
+         console.log(document.write( + c * q + g * r + k * s + o * t + ','));
+         console.log(document.write( + c * u + g * v + k * w + o * x + ','));
+         console.log(document.write( + c * y + g * z + k * aa + o * ba + ','));
+         console.log(document.write( + c * ca + g * da + k * ea + o * fa + ','))
+         ;
+         console.log(document.write( + d * q + h * r + l * s + p * t + ','));
+         console.log(document.write( + d * u + h * v + l * w + p * x + ','));
+         console.log(document.write( + d * y + h * z + l * aa + l * ba + ','));
+         console.log(document.write( + d * ca + h * da + l * ea + p * fa + ','));
+
+      }
+
+
+
+   }
+}
+
+
+
+
+summator.matx();
+
+// ---- * *
+// -------------------------------------
+
+</script>
+
+</body>
+</html>
